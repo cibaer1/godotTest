@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ckavqb25bdaul"]
+
+[ext_resource type="PackedScene" uid="uid://ctiamuq8bx1ie" path="res://playerR.tscn" id="1_f3sb7"]
+[ext_resource type="PackedScene" uid="uid://ctp0o18g7yp8p" path="res://bullet.tscn" id="2_fj7yv"]
+
+[node name="World" type="Node2D" unique_id=114149913]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1424038287]
+zoom = Vector2(2.69, 2.69)
+
+[node name="PlayerRB" parent="." unique_id=1639556564 instance=ExtResource("1_f3sb7")]
+linear_damp = 3.741
+
+[node name="Bullet" parent="." unique_id=127020746 instance=ExtResource("2_fj7yv")]
+gravity_scale = 0.0
